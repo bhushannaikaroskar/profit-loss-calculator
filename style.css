@@ -3,7 +3,6 @@
 
 :root{
     --carribean-green:#06D6A0;
-    --fiery-rose:#FF5964;
     --rose-mader:#E71D36;
     --rich-black:#02111B;
 }
@@ -65,5 +64,6 @@ button{
     display: block;
     margin: 4rem auto;
     font-size: x-large;
+    text-align: center;
 }
 
