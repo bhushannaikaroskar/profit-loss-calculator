@@ -18,11 +18,11 @@ function calculateProfitAndLoss(initial,quantity,current){
     if(current>initial){
         const profit = (current - initial)*quantity;
         const profitPercentage = profit/(initial*quantity) * 100;
-        showOutput(`The profit is ${profit} and the profit percent is ${profitPercentage.toFixed(2)}%`,green);
+        showOutput(`The profit is ${parseFloat(profit.toFixed(2))} and the profit percent is ${profitPercentage.toFixed(2)}%`,green);
     }else if(initial>current){
         const loss = (initial - current)*quantity;
         const lossPercentage = loss/(initial*quantity) * 100;
-        showOutput(`The loss is ${loss} and the loss percent is ${lossPercentage.toFixed(2)}%`,red);
+        showOutput(`The loss is ${parseFloat(loss.toPrecision(4))} and the loss percent is ${lossPercentage.toFixed(2)}%`,red);
     }else {
         showOutput("No gain no loss",white)
     }
