@@ -34,9 +34,9 @@ function submitHandler(){
     const current = Number(currentPrice.value);
 
     if(initialPrice.value == "" || quantity.value == "" || currentPrice.value ==""){
-        showOutput("Input fields cannot be empty enter all value")
+        showOutput("Input fields cannot be empty enter all value",white)
     }else if(initial<1 || qty<1 || current<0){
-        showOutput("Value should be greater than zero")
+        showOutput("Value should be greater than zero",white)
     } else{
         calculateProfitAndLoss(initial,qty,current);
     }
